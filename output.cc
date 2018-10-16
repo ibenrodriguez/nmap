@@ -2537,7 +2537,7 @@ void printfinaloutput() {
       && !o.scriptupdatedb
 #endif
       )
-    error("WARNING: No targets were specified, so 0 hosts scanned.");
+    error("WARNING: No targets were specified, so 0 hosts scanned. Are you sure you know what you are doing? BTW - Iben was here...have a nice day!");
   if (o.numhosts_scanned == 1 && o.numhosts_up == 0 && !o.listscan &&
       o.pingtype != PINGTYPE_NONE)
     log_write(LOG_STDOUT, "Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn\n");
